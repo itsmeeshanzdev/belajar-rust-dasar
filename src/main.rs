@@ -26,9 +26,27 @@ fn test_mutable() {
 
 #[test]
 fn static_typing() {
-    let mut name = "Shandika David Ardiansyah";
+    let name = "Shandika David Ardiansyah";
     println!("Hello {}", name);
 
     // name = 10;
     println!("Hello {}", name);
+}
+
+#[test]
+fn shadowing() {
+    let name = "Shandika David Ardiansyah";
+    println!("Hello {}", name);
+
+    let name = 10;
+    println!("Hello {}", name);
+}
+
+// scalar type
+
+// integer
+#[test]
+fn explicit() {
+    let age: i32 = 21;
+    println!("{}", age);
 }
